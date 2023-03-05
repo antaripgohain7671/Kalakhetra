@@ -1,12 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header';
-import Intro from '../components/Intro.astro';
+import Header from '../components/Header.astro';
+import Main from '../layouts/Main.astro';
+import Footer from '../layouts/Footer.astro';
+
 ---
 
 <Layout title="Sati Sadhani Kalakhetra">
-	<main class="container">
-		<Header client:only="react"/>
-		<Intro/>
-	</main>
+	<Header/>
+	<Main/>
+	<Footer/>
 </Layout>
